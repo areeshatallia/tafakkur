@@ -1,0 +1,126 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Scroll behavior & offset for fixed navbar */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+  overflow-x: auto;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  height: 100%; 
+overflow: hidden;
+
+}
+
+/* Typography */
+h1, h2, h3, h4, p, a {
+  font-family: 'Quicksand', sans-serif;
+}
+.App {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+/* SNAP SCROLL LAYOUT */
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* RESPONSIVE: Disable scroll snap on mobile */
+@media (max-width: 768px) {
+  .snap-container {
+    scroll-snap-type: none;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .snap-section {
+    height: auto;
+  }
+}
+
+/* THEMES */
+body[data-theme="light"] {
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+body[data-theme="dark"] {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+body[data-theme="maroon"] {
+  background-color: #2a0a0a;
+  color: #fce8e8;
+}
+
+/* FONTS */
+body[data-font="Default"] {
+  font-family: system-ui, sans-serif;
+}
+
+body[data-font="Serif"] {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body[data-font="Monospace"] {
+  font-family: "Courier New", monospace;
+}
+
+/* BACKGROUND PATTERNS */
+body[data-bg="stars"] {
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+}
+
+body[data-bg="paper"] {
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}
+
+body[data-bg="floral"] {
+  background-image: url('https://www.transparenttextures.com/patterns/floral-white.png');
+}
+
+body[data-bg="none"] {
+  background-image: none;
+}
+section {
+  padding-block: 3rem;
+  margin: 0;
+}
+
+section + section {
+  margin-top: 0; /* Prevent stacking effect */
+}
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem; /* Less top-bottom spacing */
+  }
+
+  .journal-feature-section,
+  .about-section,
+  .hero {
+    padding: 2rem 1rem !important; /* override if needed */
+  }
+}

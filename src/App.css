@@ -1,0 +1,9 @@
+/* src/App.css */
+.page-content {
+  padding-top: 80px; /* to prevent overlap from fixed navbar */
+}
+
+section {
+  height: 100vh;
+  padding: 50px;
+}

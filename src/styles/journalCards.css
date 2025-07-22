@@ -1,0 +1,123 @@
+
+.journal-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #0d0d0d; /* or your section bg */
+  color: white;
+  margin-top: -6rem;
+}
+
+.section-heading {
+    padding-top: 50px;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.section-subheading {
+  font-size: 1.5rem;
+  color: #bbbbbb;
+  margin-bottom: 2rem;
+}
+
+/* Container for all cards */
+.journal-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  padding: 2rem;
+  margin: 20px;
+}
+
+/* Each individual card */
+.journal-card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.journal-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styling: Same size for all */
+.journal-cover {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* Title */
+.journal-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Buy Button */
+.buy-btn {
+  background-color: maroon;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #990000;
+}
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1a0b0d;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(209, 108, 108, 0.4);
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  color: #d16c6c;
+}
+
+.close-button {
+  background-color: #9b2c40;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-button:hover {
+  background-color: #d16c6c;
+}

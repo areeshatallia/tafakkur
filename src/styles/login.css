@@ -1,0 +1,73 @@
+.login-page {
+  background-color: #1a0b0d; /* dark maroon background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #f8f8f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.login-form {
+  background-color: #2a0f12; /* dark maroon card */
+  padding: 40px 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(209, 108, 108, 0.4);
+}
+
+
+.login-title {
+  text-align: center;
+  color: #d16c6c;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #f0eaea;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background-color: #441a1f;
+  color: #eee;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+input::placeholder {
+  color: #c99b9b;
+}
+
+input:focus {
+  background-color: #5e242b;
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #9b2c40;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(155, 44, 64, 0.6);
+}
+
+.login-button:hover {
+  background-color: #d16c6c;
+}

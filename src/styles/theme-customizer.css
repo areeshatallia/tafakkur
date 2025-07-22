@@ -1,0 +1,44 @@
+.theme-customizer-section {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  padding: 80px 40px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(128, 0, 32, 0.4);
+   margin-bottom: 100px;
+
+}
+
+.theme-customizer-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+
+.customizer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.option-group label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.option-group select {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #800020;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+}

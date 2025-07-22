@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700;800&display=swap');
+.about-section {
+  width: 100%; /* fix for mobile overflow */
+  background-color: #0c0c0c;
+  background-image: url('https://www.bayyinahtv.com/_nuxt/review-card-bg.pAIk7hWR.png');
+  background-repeat: repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden; /* just in case */
+}
+
+
+.about-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+  color: #f5f5f5;
+}
+
+.card-heading {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #9B2C40;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #e0e0e0;
+}
+
+/* Small tablets (≥ 600px) */
+@media (min-width: 600px) {
+  .about-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .card-heading {
+    font-size: 2.2rem;
+  }
+
+  .card-text {
+    font-size: 1.05rem;
+  }
+}
+
+/* Laptops/desktops (≥ 1024px) */
+@media (min-width: 1024px) {
+  .about-section {
+    padding: 4rem 2rem;
+  }
+
+  .about-card {
+    max-width: 650px;
+    padding: 3rem 2rem;
+  }
+
+  .card-heading {
+    font-size: 2.8rem;
+  }
+
+  .card-text {
+    font-size: 1.15rem;
+  }
+}
